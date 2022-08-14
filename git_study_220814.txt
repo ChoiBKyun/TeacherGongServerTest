@@ -1,0 +1,16 @@
+
+
+**************** Git 사용법 (생활코딩) ****************
+
+1) git bash 실행
+
+2) 버전 관리할 폴더로 이동
+- 명령어 : cd /폴더
+
+3) start a working area (clone / init)
+   : init (Create an empty Git repository or reinitialize an existing one)
+- 명령어 : git init
+- 명령어를 치고 나면 디렉토리 안에 .git이라는 디렉토리가 생성됨
+  (.git은 버전관리를 하게 되면 여러가지 정보들이 생성이 되는데, 생성된 정보는 이 디렉토리에 저장이 됨)
+
+4) git status : 
