@@ -2,15 +2,93 @@
 
 **************** Git 사용법 (생활코딩) ****************
 
+********** 1. 버전을 생성하는 방법
+
 1) git bash 실행
 
 2) 버전 관리할 폴더로 이동
 - 명령어 : cd /폴더
 
-3) start a working area (clone / init)
+3) 버전관리할 파일을 생성
+
+4) start a working area (clone / init)
    : init (Create an empty Git repository or reinitialize an existing one)
 - 명령어 : git init
 - 명령어를 치고 나면 디렉토리 안에 .git이라는 디렉토리가 생성됨
   (.git은 버전관리를 하게 되면 여러가지 정보들이 생성이 되는데, 생성된 정보는 이 디렉토리에 저장이 됨)
 
-4) git status : 
+5) 명령어 : git status  
+              (생성된 파일이 untracked file이라고 나옴. 버전관리할 파일에 포함되지 않았다는 의미)
+
+6) 명령어 : git add 파일명.확장자
+              (깃에게 이 파일을 관리해라고 명령하여 해당 파일을 commit 대기상태로 만들어 줌,
+               untracked file이 Changes to be committed로 바뀜)
+
+7) 명령어 : git config --global user.name bkchoi(닉네임 또는 이름)
+              (버전에 누가 만들었는지 정보를 포함해 줌, 한번만 작성해주면 됨)
+
+8) 명령어 : git config --global user.email amiableonek@naver.com(이메일)
+              (버전에 누가 만들었는지 정보를 포함해 줌, 한번만 작성해주면 됨)           
+
+9) 명령어 : git commit
+              (git add를 통해서 대상 파일을 commit 대기 상태인 stage로 올려놓고, git commit을 통해서 해당       
+              파일을 repository로 저장함)
+              (하단에 보면 지금 어떤 상태에 있는지 그 status를 보여줌, 여기에다가 이제 현재 버전의 메세지를 적음
+               어떤 변화가 발생했는지를 적어줌)
+
+-> i 누르면 입력할 수 있는 상태가 됨. 여기에서 commit 메시지를 적어주고 exc키를 누르면 다시 입력할 수 없는 상태가 됨
+-> 여기서 :을 누르고 wq(저장하고 종료한다)를 치고 엔터를 치면 아래와 같은 메세지가 뜸
+
+========================================
+$ git commit
+[master (root-commit) c51beca] 1
+ 1 file changed, 16 insertions(+)
+ create mode 100644 git_study_220814.txt
+========================================
+
+
+10) 명령어 : git log
+               (아래와 같이 버전 정보를 보여줌)
+
+========================================
+commit c51beca4a29664c289e9116075843933e0f47f26 (HEAD -> master)
+Author: bkchoi <amiableonek@naver.com>
+Date:   Sun Aug 14 15:06:36 2022 +0900
+
+    1
+========================================
+
+11) 명령어 : cat 파일명.확장자
+               (파일 안에 내용을 볼 수 있음)
+
+
+12) 다시 commit을 하려면 6번 부터 다시 실행하면 됨
+
+
+
+********** 2. 변경사항(차이점)을 확인하기(log & diff)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
